@@ -11,17 +11,17 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/fruitImageDetailed"
+            android:id="@+id/fruitImage"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:src="@drawable/apple"
-            app:layout_constraintBottom_toBottomOf="@id/horiztonalLine"
+            app:layout_constraintBottom_toBottomOf="@id/lineH"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/verticalLine"
+            app:layout_constraintStart_toEndOf="@id/lineV"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/horiztonalLine"
+            android:id="@+id/lineH"
             android:layout_width="match_parent"
             android:layout_height="5dp"
             android:layout_marginTop="120dp"
@@ -31,12 +31,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/verticalLine"
+            android:id="@+id/lineV"
             android:layout_width="5dp"
             android:layout_height="120dp"
             android:layout_marginEnd="176dp"
             android:background="#000000"
-            app:layout_constraintBottom_toTopOf="@id/horiztonalLine"
+            app:layout_constraintBottom_toTopOf="@id/lineH"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
@@ -48,8 +48,8 @@
             android:textColor="#FF0000"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/horiztonalLine"
-            app:layout_constraintEnd_toStartOf="@id/verticalLine"
+            app:layout_constraintBottom_toBottomOf="@id/lineH"
+            app:layout_constraintEnd_toStartOf="@id/lineV"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,7 +67,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/horiztonalLine"
+            app:layout_constraintTop_toBottomOf="@id/lineH"
             app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

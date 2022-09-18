@@ -15,7 +15,7 @@ class DetailsActivity : AppCompatActivity() {
 
 
             val textView : TextView = findViewById(R.id.fruitLabelDetailed)
-            val imageView  : ImageView = findViewById(R.id.fruitImageDetailed)
+            val imageView  : ImageView = findViewById(R.id.fruitImage)
             val descView : TextView = findViewById(R.id.fruitDesc)
             textView.text= fruit.Name
             descView.text = fruit.Desc
